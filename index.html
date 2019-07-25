@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Cell</title>
+</head>
+<body>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+fa
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" 
+integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.xcv{
+    color: #616568;
+    margin-left: 50px;
+    font-weight: 550;
+}
+
+.xcv:hover{
+    color: #1389d5;
+    border-bottom: 2px;
+    border-bottom-color: #1c789c;
+    border-bottom-style: solid;
+}
+
+
+.typewriter{
+    text-align: center;
+    font-size: 60px;
+    color: #1c789c;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #1c789c; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 ; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .12em; /* Adjust as needed */
+    animation: 
+      typing 7s steps(40,end),
+      blink-caret .99s step-end;
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    0% { width: 0 }
+    100% { width: 40% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#1c789c; }
+  }
+  .Enterheading{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: #1389D5;
+    font-weight: 900;
+  }
+  .def{
+    text-align: center;
+    font-size: 30px;
+    color: #888e90;
+  }
+  .headimg{
+      width: 100%;
+      height: 50%;
+      width: auto;
+      height: auto;
+  }
+  .cigimg{
+      width: auto;
+      height: auto;
+  }
+
+  .containercard {
+  position: relative;
+  height: 60%;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.containercard:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+}
+
+.bg-initiatives{
+    background-color: rgba(19, 135, 213, 0.103);
+}
+.heading-initiatives{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1389d5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 30px; 
+}
+
+.heading-gallery{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1389d5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 30px; 
+}
+
+.heading-blogs{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1389d5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 30px; 
+}
+
+.heading-testimonials{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1389d5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 30px; 
+}
+
+.blogs{
+    position: absolute;
+    
+}
+.blog-image{
+    position: absolute;
+    align-items: center;
+
+}
+.blog-text{
+    
+    text-align: center;
+    font-size: 12px;
+    color: #888e90;
+    scroll-behavior: smooth;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.heading-community{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #1389d5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 30px; 
+
+}
+.subs{
+    border-style: none;
+    border-bottom-color: #41a0c5;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.foot{
+    background-color: #1389d5;
+
+}
+
+.ul-list{
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: white;
+    list-style: none;
+    
+}
+.foot-links{
+    
+    font-size: 12px;
+    color: white;
+}
+.footer-third-child-icons {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.main-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.child-left{
+    flex: 1;
+   background-image: url("gallery1.jpg");
+   height: 500px;
+   cursor: pointer;
+
+}
+
+
+
+.child-right-parent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    
+}
+
+.parent1{
+    padding-top:25px; 
+    display: flex;
+    margin-left: 10px;
+}
+
+
+.child-right-child1{
+    flex: 1;
+    order: 1;
+    background-image: url("gallery2.jpg");
+    height: 200px;
+    cursor: pointer;
+    background-size: cover;
+    cursor: pointer;
+}
+.child-right-child2{
+    flex: 1;
+    order: 2;
+    background-image: url("gallery3.jpg");
+    height: 200px;
+    background-size: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.parent2{
+    padding-top:25px; 
+    display: flex;
+    margin-left: 10px;
+    
+}
+.child-right-child3{
+    flex: 1;
+    order: 3;
+    background-image: url("gallery4.jpg");
+    height: 200px;
+    background-size: cover;
+    cursor: pointer;
+}
+.child-right-child4{
+    flex: 1;
+    order: 4;
+    background-image: url("gallery5.jpg");
+    height: 200px;
+    background-size: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (min-width:480px){
+    .parent1{
+      flex-direction: row;  
+    }
+}
+
+.child-left:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+    transition:
+}
+</style>
+
+
+<header>
+
+       <nav class=" navbar-expand-md bg-white navbar justify-content-start fixed-top ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" 
+            aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <!--Icon for button-->
+                <i class="fa fa-chevron-down" style="font-size: 40px;  color:gray; border: 0px solid gray;"></i>
+                
+            
+            </span>
+            </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+           <a class="navbar-brand">
+               <a href="#">
+               <img src="roorke.png" style="width: 100px;"></a>
+           </a>
+        
+           <ul class="navbar-nav" style="padding: 20px;">
+               <li class="nav-item">
+                <a class="nav-link xcv" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle xcv" href="#" data-toggle="dropdown">
+                          About Us
+                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Vision</a>
+                        <a class="dropdown-item" href="#">Culture</a>
+                        <a class="dropdown-item" href="#">Team</a>
+                        <a class="dropdown-item" href="#">Alumni</a>
+                        <a class="dropdown-item" href="#">Gallery</a>
+                        </div>
+                      </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle xcv" href="#" data-toggle="dropdown" >Initiatives
+
+                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">E-Summit</a>
+                        <a class="dropdown-item" href="#">E-Talks</a>
+                        <a class="dropdown-item" href="#">Start-up Ignite</a>
+                        <a class="dropdown-item" href="#">B-Plan: Idea Storm</a>
+                        <a class="dropdown-item" href="#">Tedx</a>
+                        <a class="dropdown-item" href="#">Endavour Entrepreneurship</a>
+                        <a class="dropdown-item" href="#">E-Club</a>
+                        <a class="dropdown-item" href="#">Hult Prices on Campus</a>
+                        <a class="dropdown-item" href="#">Vanture Unplugged</a>
+                        <a class="dropdown-item" href="#">Start-up Trek</a>
+                        <a class="dropdown-item" href="#">Start-up Entrepreneurship Program</a>
+
+                        </div>
+                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle xcv" href="#" data-toggle="dropdown">
+                    Get Involded
+                    </a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">As Alumni</a>
+                        <a class="dropdown-item" href="#">As IITR Student</a>
+                        <a class="dropdown-item" href="#">As Non-IITR Student</a>
+                        <a class="dropdown-item" href="#">As Corporate</a>
+                        <a class="dropdown-item" href="#">As Startup</a>
+                        </div>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link xcv" href="#">Resources</a></li>
+                <li class="nav-item">
+                    <a class="nav-link xcv" href="#">Community</a></li>            
+                <li class="nav-item">
+                    <a class="nav-link xcv" href="#">Contact</a></li>
+           </ul>
+           </div>
+       </nav>
+       
+</header><br><br><br><br>
+<section style="margin-top: 30px;">
+       
+        <div class=" container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div style="margin: 100px"><h1 class="typewriter">Entrepreneur Cell</h1></div>
+            </div></div>
+        </div>
+        <div class="container-fluid">
+                <img src="BgImg.jpg" style="width: 100%; height: 80vh;"  alt="Entrepreneur's Desk" class="headimg">
+            </div>
+</section>
+
+<section style="padding: 60px;">
+    <div class="container-fluid justify-content-center blurdiveffect">
+            <p class="Enterheading">
+                    What is E-Cell?
+                </p>
+                <p class="def">
+                        The Entrepreneurship Cell of IIT-Roorkee is a student-run organisation of spirited individuals who are striving to
+                         create, foster and promote entrepreneurship among the students of IIT Roorkee. The E-Cell pilots the budding
+                          enbg-initiativestrepreneurs towards their goals through all the necessary resources like mentoring, consultancy and networking
+                           with Alumni, Entrepreneurs, Investors.
+                </p>
+    </div>
+
+
+    <div class="container" style="padding: 30px">
+        <img src="CIG.jpg" class="cigimg" style="width: 100%; height: 30vh;">
+    </div>
+</section>
+
+
+<!-- Initiatives Section-->
+<section class="bg-initiatives">
+    <div class="heading-initiatives">
+        Initiatives
+    </div>
+    <div class="container-fluid">
+        
+    
+        <div class="row">
+            <div class="col-md-3">
+                    <div class="containercard" >
+                            <img src="show1.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text">An internship is a integral part of college life.SIP is an initiative taken to provide
+                                   internship for eligible college students. SIP was formulated with the motto that none of the students
+                                    should miss a chance to do an internship because of lack of opportunities. With this vision in mind,
+                                     the Internship Program aims at connecting startup enthusiast graduates/undergraduates to the startups
+                                      so that they get the relevant experience in their desired field.</div>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="containercard" >
+                            <img src="show2.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text">Endeavour Entrepreneurship is a week long entrepreneurship conclave organised
+                                    exclusively for the freshers batch in the autumn semester at IIT Roorkee. The basic aim is to
+                                    induce an entrepreneurial mindset into the students and to air the innovative streak in them. In
+                                    the 5-day extravagance we organise various workshops and informative sessions to acquaint
+                                    the freshmen with the knowledge and experience of starting up from scratch. The mentors guide
+                                    the teams to dig their way into the finals. On the final day, a closed-door pitching competition
+                                    decides the winner of the competition.</div>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="containercard" >
+                            <img src="show3.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text">TEDx IIT Roorkee is a full-day event organized by Indian Institute of Technology, Roorkee
+                                   (IITR) under the aegis of the widely popular TED (Technology, Entertainment and Design) Conferences.
+                                    Our goal is to bring together luminaries to deliver idea-focused talks on a wide range of subjects, 
+                                    to foster learning and inspiration, and provoke conversations that matter among the bright young minds
+                                     in the audience. E-cell has been the proud host of TEDx for the past 8 years.</div>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="containercard" >
+                            <img src="show4.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text">E-Summit is the flagship event of E-Cell IIT Roorkee. This entrepreneurial festival aims to 
+                                  foster the zeal of entrepreneurship not only among the students of IIT Roorkee but also the participants 
+                                  from other colleges. E-Summit includes Startup Internships/Expo, VC lounge, Business Conclave, Panel Discussion, 
+                                  Networking Meets, Mentoring Sessions, Internship Fair, Competitions, Workshops and many more events aimed at 
+                                  developing an entrepreneurial aptitude among the participants. E-Summit witnesses the presence of eminent entrepreneurs,
+                                   budding professionals, mentors, angel investors, venture capitalists, and students from different domains 
+                                   across the globe.</div>
+                            </div>
+                          </div>
+            </div>
+         </div>
+</div>
+</section>
+
+<section>
+<!--Gallery Section-->
+<div class="heading-initiatives">
+        Gallery
+    </div>
+
+<div class="container">
+<div class="main-flex">
+    <div class="child-left">
+        
+    </div>
+
+
+    <div class="child-right-parent">
+        <div class="parent1">
+            <div class="child-right-child1">
+                
+        </div>
+
+
+            <div class="child-right-child2">
+            
+            </div>
+        </div>
+
+    <div class="parent2">
+    <div class="child-right-child3">
+             
+    </div>
+    <div class="child-right-child4">
+        
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+</section>
+<section>
+    <div class="heading-blogs">
+        Blogs
+    </div>
+    <div class="container-fluid">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 justify-content-center" style="margin-top: 50px;">
+                    <img src="blog1.jpeg" width="300" height="200">
+                </div>
+                <div class="col-lg-8 col-sm-12" style="margin-top: 50px;">
+                    <a href="#">Germany 101 — World Business Dialogue</a><br>
+                    
+                            <p style="font-size: 18px; color: gray">Yash Kumar Singh</p>
+                            <p style="font-size: 14px; color: gray">Nov25<br>
+                            The statement, translated from the original German, became more so true as each day passed in Köln,
+                            the city crammed with bistros bursting to the seams with the aroma of Kölsch. All thanks to the World
+                            Business Dialogue being held at the city’s historic university every year.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-lg-4 col-sm-12 justify-content-center" style="margin-top: 50px; ">
+                        <img src="blog2.jpg" width="300" height="200">
+                    </div>
+                    <div class="col-lg-8 col-sm-12" style="margin-top: 50px;">
+                        <a href="#">Why do most start-ups fail?</a>
+                                <p style="font-size: 18px; color: gray">E-Cell IIT Roorkee<br></p>
+                                <p style="font-size: 14px; color: gray">Nov25<br>
+                                One might google the question and look for answers. The points mentioned in the fervently googled ’N’ number
+                                of websites are, however, exactly the same (where N is a large number). Indeed, most people would follow these
+                                tips accordingly while some trailblazers would make their own way.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-4 col-sm-12 justify-content-center" style="margin-top: 50px;">
+                            <img src="blog3.png" width="300" height="200">
+                        </div>
+                        <div class="col-lg-8 col-sm-12" style="margin-top: 50px;">
+                            <a href="#">10 Reasons to be an Entreptreneur</a><br>
+                                    <p style="font-size: 18px; color: gray">E-Cell IIT-Roorkee</p>
+                                    <p style="font-size: 14px; color: gray">Nov25 <br>
+                                    Entrepreneur is someone who has ability to recognise an opportunity, shape a goal and take advantage of a situation.
+                                     He plans, raises resources, and gives birth to new ventures. He’s his own boss. Most of us today want to see a 
+                                     change but he is the one who dares to take risks and create the change.
+                            </p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</section>
+
+<!--Testimonials Section-->
+<section>
+     
+</section>
+
+<section>
+    
+    <div class="heading-community" style="margin-top: 30px; margin-bottom: 30px">
+        Join our community
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <p style="size: 12px; color: #888e90;margin-left: 100px;">
+                        Never miss an update ! Sign up for instant updates, cool events and a whole bunch of new stuff.
+
+                </p>
+                <br><br><br><br><br><br><br>
+                <input type="text" class="community-textbox subs" placeholder="Enter your email here" style="margin-left: 10%;">
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-outline-primary" style="width: 200px; border-radius: 25px; margin-left: 100px;">Subscribe</button>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <img src="community.jpg" width="80%" height="70%">
+                </div>
+        </div>
+
+    </div>
+</section>
+<!--Footer-->
+<footer>
+<section>
+    <div class="container-fluid foot">
+        <p style="text-align: center; color: white; font-weight: 600; padding-top:25px;">
+                ENTREPRENEURSHIP CELL, IIT ROORKEE
+        </p>
+        <p style="text-align: center; color: white; font-weight: 100;">
+                for partnership opportunities<br> mail at ecell@iitr.ac.in
+             </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 ">
+                    <ul class="ul-list">LINKS
+                        <li><a class="foot-links" href="#">Start-up Portfolio</a></li>
+                        <li><a class="foot-links" href="#">Blogs</a></li>
+                        <li><a class="foot-links" href="#">Video</a></li>
+                        </ul>
+                </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                    <ul class="ul-list">ABOUT US
+                            <li><a class="foot-links" href="#">Vision</a></li>
+                            <li><a class="foot-links" href="#">Team</a></li>
+                            <li><a class="foot-links" href="#">Blogs</a></li>
+                            </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                    <ul class="ul-list">GET INVOLVED
+                        <li><a class="foot-links" href="#">As IITR Student</a></li>
+                        <li><a class="foot-links" href="#">As Alumni</a></li>
+                        <li><a class="foot-links" href="#">As Corporate/Start-up</a></li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                    <ul class="ul-list">CONTACT US
+                        <li>Phone</li>
+                        <li><a class="foot-links" href="#">xxx-xxx-xxxx</a></li>
+                        <li>Email</li>
+                        <li><a class="foot-links" href="#">xyz@abc.com</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 col-sm-12 col-lg-2">
+                    <p>
+                    <a>
+                   <i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px; padding:5px 12px; color: white; border: 1px solid white; border-radius: 25px;"></i>
+                    
+                </a></p>    
+                    
+                </div>
+                <div class="col-md-2 col-sm-12 col-lg-2">
+                        <p>
+                        <a href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true" style="font-size: 30px; padding:5px 8px; color: white; border: 1px solid white; border-radius: 25px;"></i>
+                        </a>
+                        </p>
+
+                </div>   
+                <div class="col-md-2 col-sm-12 col-lg-2">
+                        <p>
+                        <a href="#">
+                            <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 30px; padding:5px 8px; color: white; border: 1px solid white; border-radius: 25px;"></i>
+                        </a>
+                        </p>     
+                    
+                </div>
+                <div class="col-md-2 col-sm-12 col-lg-2">
+                        <p>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px; padding:5px 8px; color: white; border: 1px solid white; border-radius: 25px;"></i>
+                        </a>
+                        </p>   
+                    
+                </div>
+                <div class="col-md-2 col-sm-12 col-lg-2">
+                        <p>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px; padding:5px 8px; color: white; border: 1px solid white; border-radius: 25px;"></i>
+                        </a>
+                        </p> 
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="container">
+            <p style="text-align: center; color: white; font-weight: 600; padding-top:25px; padding-bottom:25px;">
+                    Terms of use/Privacy policy
+            </p>
+        </div>
+</section>
+</footer>
+</body>
+</html>
